@@ -19,7 +19,7 @@ const Portfolio = () => {
     {
       id: '1',
       title: 'netflix clone',
-      description: 'Modern e-commerce platform dengan fitur lengkap untuk online shopping',
+      description: 'A Netflix Clone with responsive UI, movie browsing, and authentication features.',
       url: 'https://faanglix.netlify.app/',
       imageUrl: '/PreviewImage/netflix_clone.png',
       technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
@@ -29,8 +29,8 @@ const Portfolio = () => {
     {
       id: '2',
       title: 'Image model dashboard',
-      description: 'Dashboard untuk monitoring dan analytics dengan real-time data visualization',
-      url: 'teachable-with-arduino.netlify.app',
+      description: 'An interactive dashboard that displays real-time predictions and confidence scores',
+      url: 'https://teachable-with-arduino.netlify.app',
       imageUrl: '/PreviewImage/tm.png',
       technologies: ['Javascript', 'HTML', 'CSS', 'Tensorflow.js'],
       category: 'Dashboard',
@@ -38,13 +38,24 @@ const Portfolio = () => {
     },
     {
       id: '3',
-      title: 'Landing Page Design',
-      description: 'Creative landing page dengan animasi yang menarik dan responsive design',
-      url: 'https://example-landing.com',
-      imageUrl: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
-      category: 'Landing Page',
-      date: '2023-11'
+      title: 'Weekly todo',
+      description: 'A Weekly To-Do app with task tracking, scheduling, and productivity focus.',
+      url: 'https://weekly-todo.vercel.app',
+      imageUrl: '/PreviewImage/weekly-todo.png',
+      technologies: ['Vite', 'TypeScript', 'CSS'],
+      category: 'Web App',
+      date: '2025-04'
+    }
+    ,
+    {
+      id: '4',
+      title: 'UKMI ALFARUQ',
+      description: 'Responsive landing page for campus Islamic organization with structured components.',
+      url: 'https://weekly-todo.vercel.app',
+      imageUrl: '/PreviewImage/alfaruq.png',
+      technologies: ['Vite', 'JavaScript', 'CSS'],
+      category: 'Web App',
+      date: '2025-04'
     }
   ]);
 
@@ -64,6 +75,8 @@ const Portfolio = () => {
             <Image
               src="/farhan.jpg"
               alt="Farhan Lamiran"
+              width={72}
+              height={72}
               className="w-18 h-18 rounded-full object-cover"
             />
             <div>
@@ -133,6 +146,8 @@ const Portfolio = () => {
                   <Image
                     src={website.imageUrl}
                     alt={website.title}
+                    width={800} // sesuaikan ukuran asli gambarnya
+                    height={400}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-transparant bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
