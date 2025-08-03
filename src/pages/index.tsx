@@ -54,7 +54,7 @@ const Portfolio = () => {
       url: 'https://landing-page-alfaruq.vercel.app',
       imageUrl: '/PreviewImage/alfaruq.png',
       technologies: ['Vite', 'JavaScript', 'CSS'],
-      category: 'Web App',
+      category: 'Landing Page',
       date: '2025-04'
     }
   ]);
