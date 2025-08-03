@@ -1,6 +1,6 @@
 // pages/index.tsx
 import { useState } from 'react';
-import { ExternalLink, Globe, Calendar, User, Mail, Github, Linkedin } from 'lucide-react';
+import { ExternalLink, Globe, Calendar, Mail, Github, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 
 interface Website {
@@ -61,7 +61,7 @@ const Portfolio = () => {
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-8">
           <div className="flex items-center gap-4 mb-6">
-            <img
+            <Image
               src="/farhan.jpg"
               alt="Farhan Lamiran"
               className="w-18 h-18 rounded-full object-cover"
@@ -74,7 +74,7 @@ const Portfolio = () => {
 
           <p className="text-lg text-gray-700 mb-6 max-w-2xl">
             The gallery below showcases some of my recent projects.
-            Feel free to reach out via email if you're interested in collaborating, learning more, or discussing new opportunities
+            Feel free to reach out via email if you&#39;re interested in collaborating, learning more, or discussing new opportunities
           </p>
 
           <div className="flex gap-4">
@@ -130,7 +130,7 @@ const Portfolio = () => {
               >
                 {/* Preview Image */}
                 <div className="relative overflow-hidden bg-gray-100">
-                  <img
+                  <Image
                     src={website.imageUrl}
                     alt={website.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
