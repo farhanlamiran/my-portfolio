@@ -51,7 +51,7 @@ const Portfolio = () => {
       id: '4',
       title: 'UKMI ALFARUQ',
       description: 'Responsive landing page for campus Islamic organization with structured components.',
-      url: 'https://weekly-todo.vercel.app',
+      url: 'https://landing-page-alfaruq.vercel.app',
       imageUrl: '/PreviewImage/alfaruq.png',
       technologies: ['Vite', 'JavaScript', 'CSS'],
       category: 'Web App',
