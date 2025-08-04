@@ -17,7 +17,7 @@ const ContactSection = () => {
 
                   <p className="text-white/60 text-lg mb-12 max-w-2xl mx-auto">
                       I&apos;m always interested in new opportunities and exciting projects.
-                      Feel free to reach out if you'd like to collaborate or just say hello!
+                      Feel free to reach out if you&apos;d like to collaborate or just say hello!
                   </p>
 
                   {/* Contact Links */}
