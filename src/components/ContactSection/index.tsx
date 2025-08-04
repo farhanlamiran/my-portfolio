@@ -12,11 +12,11 @@ const ContactSection = () => {
                   </div>
 
                   <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent mb-6">
-                      Let's Work Together
+                      Let&apos;s Work Together
                   </h2>
 
                   <p className="text-white/60 text-lg mb-12 max-w-2xl mx-auto">
-                      I'm always interested in new opportunities and exciting projects.
+                      I&apos;m always interested in new opportunities and exciting projects.
                       Feel free to reach out if you'd like to collaborate or just say hello!
                   </p>
 
