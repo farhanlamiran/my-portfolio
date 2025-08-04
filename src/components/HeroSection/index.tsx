@@ -60,7 +60,7 @@ const HeroSection = () => {
 
                         <button className="group px-8 py-4 border border-white/20 rounded-full text-white hover:bg-white/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm">
                             <a
-                                href="/CV_FARHAN_LAMIRAN_data.pdf"
+                                href="/CV_FARHAN_LAMIRAN.pdf"
                                 download
                                 className="inline-flex items-center gap-2 text-white hover:no-underline"
                             >
