@@ -2,7 +2,7 @@
 import React from 'react';
 import { scrollToSection } from '@/utils/scrollToSection';
 
-interface AnchorItem {
+export interface AnchorItem {
     id: string;
     label: string;
 }

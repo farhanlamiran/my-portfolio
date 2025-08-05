@@ -1,19 +1,10 @@
 import React from 'react';
 import { ExternalLink, Calendar } from 'lucide-react';
+import { IWebsiteProject } from '@/data/websites';
 
-export interface Project {
-    id: string;
-    title: string;
-    description: string;
-    imageUrl: string;
-    url: string;
-    category: string;
-    date: string;
-    technologies: string[];
-}
 
 interface ProjectGridProps {
-    projects: Project[];
+    projects: IWebsiteProject[];
 }
 
 const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {

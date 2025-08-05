@@ -1,6 +1,6 @@
 import React from 'react'
 import { Star } from 'lucide-react';
-import { SKILL } from '@/data/skills'
+import { ISkill, SKILL } from '@/data/skills'
 
 
 const SkillsSection = () => {
@@ -19,7 +19,7 @@ const SkillsSection = () => {
 
                 {/* Skills Grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                    {SKILL.map((skill, index) => (
+                    {SKILL.map((skill:ISkill, index:number) => (
                         <div
                             key={index}
                             className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"

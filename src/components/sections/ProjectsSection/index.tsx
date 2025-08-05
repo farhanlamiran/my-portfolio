@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { WEBSITE_DATA } from '@/data/websites';
-import { ExternalLink, Calendar, Code } from 'lucide-react';
+import { IWebsiteProject, WEBSITE_DATA } from '@/data/websites';
+import {Code } from 'lucide-react';
 import ProjectGrid from './ProjectGrid';
 
 const ProjectsSection = () => {
 
-    const [websites] = useState(WEBSITE_DATA);
-    const [selectedCategory, setSelectedCategory] = useState('All');
+    const [websites] = useState<IWebsiteProject[]>(WEBSITE_DATA);
+    const [selectedCategory, setSelectedCategory] = useState<string>('All');
     const categories = ['All', ...Array.from(new Set(websites.map(w => w.category)))];
 
     const filteredWebsites = selectedCategory === 'All'
