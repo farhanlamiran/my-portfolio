@@ -1,6 +1,7 @@
 import React from 'react'
 import { Download, Sparkles, ChevronDown } from 'lucide-react';
 import AnchorSmoothNav from '@/components/layout/DefaultLayout/Navbar/AnchorSmoothNav';
+import Image from 'next/image';
 
 const HeroSection = () => {
     return (
@@ -17,7 +18,7 @@ const HeroSection = () => {
                 <div className="relative mb-8 inline-block">
                     <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur opacity-75 animate-pulse"></div>
                     <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-white/20">
-                        <img
+                        <Image
                             src="/farhan.jpg"
                             alt="Farhan Lamiran"
                             className="w-full h-full object-cover"
