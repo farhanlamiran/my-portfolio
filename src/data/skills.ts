@@ -8,8 +8,14 @@ import {
     SiTailwindcss,
     SiMongodb,
 } from "react-icons/si";
+import { IconType } from "react-icons";
 
-export const SKILL = [
+export interface ISkill {
+    name: string;
+    icon: IconType;
+}
+
+export const SKILL:ISkill[] = [
     { name: "JavaScript", icon: SiJavascript },
     { name: "TypeScript", icon: SiTypescript },
     { name: "React", icon: SiReact },

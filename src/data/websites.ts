@@ -1,4 +1,15 @@
-export const WEBSITE_DATA =[
+export interface IWebsiteProject {
+  id: string;
+  title: string;
+  description: string;
+  url: string;
+  imageUrl: string;
+  technologies: string[];
+  category: string;
+  date: string; // bisa gunakan Date jika parsing jadi objek Date
+}
+
+export const WEBSITE_DATA: IWebsiteProject[] =[
   {
     "id": "1",
     "title": "netflix clone",

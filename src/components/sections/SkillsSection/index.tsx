@@ -2,6 +2,7 @@ import React from 'react'
 import { Star } from 'lucide-react';
 import { SKILL } from '@/data/skills'
 
+
 const SkillsSection = () => {
     return (
         <section id="skills" className="py-20 px-6">
