@@ -1,34 +1,20 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ContactSection from '@/components/ContactSection';
-import SkillsSection from '@/components/SkillsSection';
-import ProjectsSection from '@/components/ProjectsSection';
-import HeroSection from '@/components/HeroSection';
-// pages/index.tsx atau pages/portfolio.tsx
-import Head from 'next/head'
-
+import ContactSection from '@/components/sections/ContactSection';
+import SkillsSection from '@/components/sections/SkillsSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import HeroSection from '@/components/sections/HeroSection';
+import DefaultLayout from '@/components/layout/DefaultLayout';
+import CustomHead from '@/components/layout/CustomHead';
 
 const Portfolio = () => {
-
   return (
-    <>
-      <Head>
-        <title>Farhan Lamiran | Web Developer</title>
-        <meta
-          name="description"
-          content="Portfolio website of Farhan Lamiran, a MERN stack developer."
-        />
-      </Head>
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <Navbar />
+    <DefaultLayout>
+      <CustomHead/>
       <HeroSection />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
-      <Footer />
-    </div>
-    </>
-  );
+    </DefaultLayout>
+  )
 };
 
 export default Portfolio;
