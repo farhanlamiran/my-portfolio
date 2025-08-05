@@ -21,6 +21,8 @@ const HeroSection = () => {
                         <Image
                             src="/farhan.jpg"
                             alt="Farhan Lamiran"
+                            width={400} // lebar dalam pixel
+                            height={400} // tinggi dalam pixel
                             className="w-full h-full object-cover"
                         />
                     </div>

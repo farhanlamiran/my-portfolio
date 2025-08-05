@@ -22,9 +22,11 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
                         <Image
                             src={project.imageUrl}
                             alt={project.title}
+                            width={400} // lebar dalam pixel
+                            height={400} // tinggi dalam pixel
                             className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                         />
-                        <div className="absolute inset-0 bg-black/20 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-black/10 group-hover:opacity-100 transition-opacity duration-300" />
 
                         {/* Overlay */}
                         <div className="bg-am absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

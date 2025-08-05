@@ -1,2 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --font-display: "Satoshi-Variable"; 
+}
+
+@font-face {
+  font-family: Satoshi-Variable;
+  src: url('../../public/fonts/Satoshi-VariableItalic.woff2') format('woff2');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+
