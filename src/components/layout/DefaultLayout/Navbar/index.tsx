@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Menu, X } from 'lucide-react';
-import { scrollToSection } from "@/utils/scrollToSection";
+import AnchorSmoothNav from "./AnchorSmoothNav";
+import { navItems } from "@/constants/navItems";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,39 +15,7 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <a
-                            href="#home"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                scrollToSection('#home');
-                            }}
-                            className="text-white/80 hover:text-white transition-colors"
-                        >
-                            Home</a>
-                        <a
-                            href="#projects"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                scrollToSection('#projects');
-                            }}
-                            className="text-white/80 hover:text-white transition-colors"
-                        >Projects</a>
-                        <a
-                            href="#skills"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                scrollToSection('#skills');
-                            }}
-                            className="text-white/80 hover:text-white transition-colors"
-                        >Skills</a>
-                        <a
-                            href="#contact"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                scrollToSection('#contact');
-                            }}
-                            className="text-white/80 hover:text-white transition-colors"
-                        >Contact</a>
+                        <AnchorSmoothNav items={navItems} className="text-white /80 hover:text-white transition-colors" />
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -62,10 +31,7 @@ const Navbar = () => {
                 {isMenuOpen && (
                     <div className="md:hidden mt-4 pb-4 border-t border-white/10">
                         <div className="flex flex-col space-y-4 pt-4">
-                            <a href="#home" className="text-white/80 hover:text-white transition-colors">Home</a>
-                            <a href="#projects" className="text-white/80 hover:text-white transition-colors">Projects</a>
-                            <a href="#skills" className="text-white/80 hover:text-white transition-colors">Skills</a>
-                            <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
+                            <AnchorSmoothNav items={navItems} className="text-white /80 hover:text-white transition-colors" />
                         </div>
                     </div>
                 )}
