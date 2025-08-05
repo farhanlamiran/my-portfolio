@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react';
 import { WEBSITE_DATA } from '@/data/websites';
 import { ExternalLink, Calendar, Code } from 'lucide-react';

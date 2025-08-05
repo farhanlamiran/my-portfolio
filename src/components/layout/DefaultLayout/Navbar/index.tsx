@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Menu, X } from 'lucide-react';
+import { scrollToSection } from "@/utils/scrollToSection";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +14,39 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className="text-white/80 hover:text-white transition-colors">Home</a>
-                        <a href="#projects" className="text-white/80 hover:text-white transition-colors">Projects</a>
-                        <a href="#skills" className="text-white/80 hover:text-white transition-colors">Skills</a>
-                        <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
+                        <a
+                            href="#home"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection('#home');
+                            }}
+                            className="text-white/80 hover:text-white transition-colors"
+                        >
+                            Home</a>
+                        <a
+                            href="#projects"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection('#projects');
+                            }}
+                            className="text-white/80 hover:text-white transition-colors"
+                        >Projects</a>
+                        <a
+                            href="#skills"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection('#skills');
+                            }}
+                            className="text-white/80 hover:text-white transition-colors"
+                        >Skills</a>
+                        <a
+                            href="#contact"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection('#contact');
+                            }}
+                            className="text-white/80 hover:text-white transition-colors"
+                        >Contact</a>
                     </div>
 
                     {/* Mobile Menu Button */}
