@@ -2,6 +2,7 @@ import React from 'react'
 import { Download, Sparkles, ChevronDown } from 'lucide-react';
 import AnchorSmoothNav from '@/components/layout/DefaultLayout/Navbar/AnchorSmoothNav';
 import Image from 'next/image';
+import { DownloadButton } from './ButtonDownload';
 
 const HeroSection = () => {
     return (
@@ -58,16 +59,7 @@ const HeroSection = () => {
                             <AnchorSmoothNav items={[{ id: "projects", label: "View My Project" }]} className="inline-flex items-center gap-2 text-white hover:no-underline" />
                         </button>
 
-                        <button className="group px-8 py-4 border border-white/20 rounded-full text-white hover:bg-white/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm">
-                            <a
-                                href="/CV_FARHAN_LAMIRAN.pdf"
-                                download
-                                className="inline-flex items-center gap-2 text-white hover:no-underline"
-                            >
-                                <Download className="w-4 h-4" />
-                                Download CV
-                            </a>
-                        </button>
+                        <DownloadButton />
                     </div>
                 </div>
 
