@@ -20,7 +20,7 @@ const HeroSection = () => {
                     <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur opacity-75 animate-pulse"></div>
                     <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-white/20">
                         <Image
-                            src="/farhan.jpg"
+                            src="/faang2.png"
                             alt="Farhan Lamiran"
                             width={400} // lebar dalam pixel
                             height={400} // tinggi dalam pixel

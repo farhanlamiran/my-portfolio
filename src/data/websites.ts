@@ -7,6 +7,7 @@ export interface IWebsiteProject {
   technologies: string[];
   category: string;
   date: string; // bisa gunakan Date jika parsing jadi objek Date
+  
 }
 
 export const WEBSITE_DATA: IWebsiteProject[] =[
@@ -32,13 +33,13 @@ export const WEBSITE_DATA: IWebsiteProject[] =[
   },
   {
     "id": "3",
-    "title": "Weekly todo",
-    "description": "A Weekly To-Do app with task tracking, scheduling, and productivity focus.",
-    "url": "https://weekly-todo.vercel.app",
-    "imageUrl": "/PreviewImage/weekly-todo.png",
-    "technologies": ["Vite", "TypeScript", "CSS"],
+    "title": "lynkf.site",
+    "description": "A SaaS website for building link bio website",
+    "url": "https://lynkf.site",
+    "imageUrl": "/PreviewImage/lynkf.png",
+    "technologies": ["NextJs", "TypeScript", "supabase", "Tailwind"],
     "category": "Web App",
-    "date": "2025-04"
+    "date": "2025-09"
   },
   {
     "id": "4",
@@ -49,5 +50,15 @@ export const WEBSITE_DATA: IWebsiteProject[] =[
     "technologies": ["Vite", "JavaScript", "CSS"],
     "category": "Landing Page",
     "date": "2025-04"
+  },
+  {
+    "id": "5",
+    "title": "Country explore",
+    "description": "Responsive page for search any country and see the details (project learning)",
+    "url": "country-explorer-sage.vercel.app",
+    "imageUrl": "/PreviewImage/country.png",
+    "technologies": ["Vue", "TypeScript", "CSS", "supabase"],
+    "category": "Landing Page",
+    "date": "2025-08"
   }
 ]
